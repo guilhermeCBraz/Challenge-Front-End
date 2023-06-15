@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS RESET */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CSS RESET END */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --fs-body: 1.6rem;
+  --fs-heading: 2.2rem;
+  --fs-text: 1.4rem;
+  --fc-primary: #464646;
+}
+
+.hd-primary {
+  font-size: var(--fs-heading);
+  font-weight: 700;
+  line-height: 2.6rem;
+}
+
+header,
+#presentation,
+#about-me {
+  padding: 1.6rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--fs-body);
+  ;
+  background-color: #F5F5F5;
+  color: var(var(--fc-primary));
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  vertical-align: middle;
+}
+
+#logo {
+  font-weight: 700;
+  text-align: center;
+}
+
+#logo::before {
+  content: url("data:image/svg+xml,%3Csvg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 8L19.25 5.25L22 4L19.25 2.75L18 0L16.75 2.75L14 4L16.75 5.25L18 8Z' fill='%23464646'/%3E%3Cpath d='M18 14L16.75 16.75L14 18L16.75 19.25L18 22L19.25 19.25L22 18L19.25 16.75L18 14Z' fill='%23464646'/%3E%3Cpath d='M10.5 8.5L8 3L5.5 8.5L0 11L5.5 13.5L8 19L10.5 13.5L16 11L10.5 8.5ZM8.99 11.99L8 14.17L7.01 11.99L4.83 11L7.01 10.01L8 7.83L8.99 10.01L11.17 11L8.99 11.99Z' fill='%23464646'/%3E%3C/svg%3E%0A");
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+#menu li:last-child {
+  font-size: 1.6rem;
+}
+
+#presentation p {
+  font-size: var(--fs-text);
+  line-height: 1.5rem;
+  margin: 1.6rem 0;
+}
+
+ul#social-medias {
+  display: flex;
+  gap: 8px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+#social-medias a::after {
+  content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_166_1692)'%3E%3Cpath d='M4.69993 12.2426L10.4369 6.50565L10.4369 11.776L11.771 11.7712V4.22876H4.22853L4.22853 5.55812L9.49412 5.56284L3.75712 11.2998L4.69993 12.2426Z' fill='%23464646'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_166_1692'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  margin-left: 2px;
+  vertical-align: top;
+}
+
+#about-me {
+  background-color: #EAF2FD;
+  padding: 1.6rem;
+}
+
+#about-me p {
+  margin: 1.6rem 0;
+  font-size: var(--fs-text);
+}
